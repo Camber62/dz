@@ -1,0 +1,265 @@
+body {
+    background-color: #e0e0e0;
+
+}
+
+.class {
+    width: 780px;
+    /* margin: auto; */
+}
+
+.registration {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 800px;
+    height: 300px;
+    display: flex;
+    margin: 15px;
+}
+
+.details h2 {
+    margin-bottom: 25px;
+
+}
+
+.details {
+    float: right;
+    position: relative;
+    bottom: 1px;
+    margin-left: 30px;
+}
+
+.reg_form1 {
+    margin-left: 30px;
+}
+
+.registration input,
+.reg_form1 input,
+select {
+    border: none;
+    border-bottom: 1px solid #9b9b9b;
+    background-color: #e0e0e0;
+
+}
+
+.username input,
+.email input {
+    width: 99%;
+}
+
+.details input,
+select {
+    width: 150px;
+    height: 50px;
+}
+
+.registration ::placeholder,
+select {
+    padding-left: 15px;
+}
+#year::placeholder{
+    color:black;
+}
+
+select {
+    height: 53px;
+}
+
+#password,
+#f_name,
+select {
+    margin-right: 20px;
+}
+
+
+.check_box {
+    top: 50px;
+}
+.check_box div{
+    margin-top: 15px;
+}
+
+.check_box input {
+display: none;
+}
+.feik {
+    display: inline-block;
+    position: relative;
+    width: 15px;
+    height: 15px;
+    border-radius: 5px;
+    border: 1px solid #979996;
+    background-color: #dad6d6;
+}
+
+.feik::before {
+    content: "";
+    
+}
+
+.check_box input:checked+.feik::before {
+    content:"\2714	";
+    position: relative;
+    bottom: 3px;
+    left: 1px;
+
+}
+
+.check_box input:checked+.feik {
+    
+}
+
+
+.img1 {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 25px;
+    right: 40px;
+}
+
+.img2 {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 25px;
+    right: 40px;
+}
+
+.img3 {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 25px;
+    right: 40px;
+}
+
+hr {
+    margin-top: 100px;
+}
+
+button {
+    margin-top: 35px;
+    float: right;
+    background-color: #39838d;
+    border: 0;
+    color: white;
+    border-radius: 3px;
+    width: 115px;
+    height: 30px;
+}
+
+
+
+
+
+/* Media zapros */
+
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+    .class {
+        width: 65%;
+    }
+
+    .registration {
+        display: block;
+        margin: 15px;
+    }
+
+    .reg_form1 {
+        width: 371px;
+
+    }
+
+    .details {
+        float: left;
+        margin-left: 0;
+        margin-top: 50px;
+        width: 100%;
+    }
+
+    .details input,
+    select {
+        width: 190px;
+        height: 17px;
+        margin-top: 30px;
+    }
+
+    .check_box {
+        display: flex;
+        float: left;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    hr {
+        width: 425px;
+        position: relative;
+        top: 35px;
+    }
+
+
+    .end {
+        width: fit-content;
+    }
+
+}
+
+
+@media screen and (max-width: 600px) {
+    .registration {
+        display: block;
+
+    }
+
+    .check_box {
+        margin-top: 50px;
+        position: relative;
+    }
+
+    .details {
+        display: grid;
+        width: 100%;
+        float: left;
+        margin: 0%;
+    }
+
+    .reg_form1 {
+        width: 300px;
+    }
+
+    .password {
+        display: grid;
+    }
+
+    #password {
+        margin: 0;
+    }
+
+    #password1 {
+        margin-top: 30px;
+    }
+
+    .details h2 {
+        margin-top: 25px;
+    }
+
+    .name {
+        display: grid;
+        width: 350px;
+    }
+
+    .name input {
+        width: 327px;
+    }
+
+    .details input,
+    select {
+        width: 330px;
+        height: 17px;
+        margin-top: 30px;
+    }
+
+    .class {
+        width: 350px;
+    }
+}
